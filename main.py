@@ -9,9 +9,7 @@ COLOMN_NUM = 4
 def check_negative(string, char):
     if char.find('!') == -1:
         index = string.find(char)
-        if index != -1 and string[index - 1] != '!':
-            return True
-        return False
+        return index != -1 and string[index - 1] != '!'
     else:
         return string.find(char) != -1
 
